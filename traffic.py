@@ -5,6 +5,8 @@ from dotenv import load_dotenv
 from datetime import datetime
 import csv
 
+os.makedirs("logs", exist_ok=True)
+
 logging.basicConfig(
     filename="logs/traffic.log",
     level=logging.INFO,
